@@ -19,7 +19,13 @@ body {
     margin: 0 auto;
 }
 
+a {
+    text-decoration: none;
+}
+
 @import "./partials/header.scss";
+
+@import "./partials/alternativeMain.scss";
 
 main {
     background-color: $dark;

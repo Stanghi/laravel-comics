@@ -18,3 +18,7 @@
     @include('partials.blueBand')
 </main>
 @endsection
+
+@section('title')
+    comics
+@endsection

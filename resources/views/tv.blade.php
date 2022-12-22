@@ -1,7 +1,7 @@
 @extends('layouts.main')
 
 @section('content')
-    <main>
+    <main class="alternative-main">
         tv
     </main>
 @endsection
