@@ -1,1 +1,136 @@
-@import '~bootstrap/scss/bootstrap'
+@use "./partials/variables" as *;
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.debug {
+    background-color: rgba(255, 0, 0, 0.5);
+}
+
+.container {
+    width: 67%;
+    margin: 0 auto;
+}
+
+@import "./partials/header.scss";
+
+main {
+    background-color: $dark;
+
+    .jumbotron {
+        height: 400px;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-image: url(../assets/img/jumbotron.jpg);
+        margin-bottom: 55px;
+    }
+    .container {
+        position: relative;
+        display: flex;
+        flex-wrap: wrap;
+
+        .current-serie {
+            position: absolute;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            top: -80px;
+            width: 250px;
+            height: 50px;
+            background-color: $dc-blue;
+
+            p {
+                text-transform: uppercase;
+                font-size: 1.4rem;
+                color: $text-white;
+                font-weight: bold;
+            }
+        }
+
+        & div:last-child {
+            display: flex;
+            justify-content: center;
+            width: 100%;
+
+            button {
+                cursor: pointer;
+                text-transform: uppercase;
+                margin-bottom: 20px;
+                font-weight: bold;
+                font-size: 0.7rem;
+                color: $text-white;
+                width: 180px;
+                height: 35px;
+                border: none;
+                background-color: $dc-blue;
+            }
+        }
+    }
+}
+
+.band {
+    display: flex;
+    align-items: center;
+    height: 155px;
+    background-color: $dc-blue;
+
+    .container {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+
+        .box {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            img {
+                height: 50px;
+                margin-right: 15px;
+            }
+
+            p {
+                font-size: 0.9rem;
+                text-transform: uppercase;
+                color: $text-white;
+            }
+
+            .visa-svg {
+                transform: scale(0.7);
+            }
+        }
+    }
+}
+
+.card {
+    overflow-wrap: break-word;
+    inline-size: 209px;
+    padding: 0 12px 50px 0;
+    cursor: pointer;
+
+    .thumb {
+        overflow: hidden;
+        width: 185px;
+        height: 185px;
+        margin-bottom: 15px;
+
+        img {
+            width: 100%;
+        }
+    }
+
+    p {
+        font-size: 0.9rem;
+        text-transform: uppercase;
+        color: $text-white;
+    }
+}
+
+@import "./partials/footer.scss";
