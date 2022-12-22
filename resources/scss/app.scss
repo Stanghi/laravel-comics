@@ -28,7 +28,7 @@ main {
         height: 400px;
         background-size: cover;
         background-repeat: no-repeat;
-        background-image: url(../assets/img/jumbotron.jpg);
+        background-image: url(../img/jumbotron.jpg);
         margin-bottom: 55px;
     }
     .container {
@@ -90,6 +90,7 @@ main {
             display: flex;
             justify-content: center;
             align-items: center;
+            width: calc(100% / 5);
 
             img {
                 height: 50px;

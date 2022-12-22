@@ -13,13 +13,13 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/character', function () {
-    return view('character');
-})->name('character');
-
 Route::get('/', function () {
     return view('comics');
 })->name('comics');
+
+Route::get('/character', function () {
+    return view('character');
+})->name('character');
 
 Route::get('/movies', function () {
     return view('movies');
