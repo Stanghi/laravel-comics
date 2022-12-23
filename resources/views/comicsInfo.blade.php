@@ -6,7 +6,7 @@
 
         <div class="container info">
             <div class="x">
-                <img src="{{ $comic['thumb'] }}" alt="{{ $comic['title'] }}" class="comic-info-thumb">
+                <img src="{{ $comic['thumb'] }}" alt="{{ $comic['title'] }}">
 
                 <div class="comicsInfo">
                     <h1>{{ $comic['title'] }}</h1>
