@@ -23,59 +23,58 @@ a {
     text-decoration: none;
 }
 
-@import "./partials/header.scss";
-
-@import "./partials/alternativeMain.scss";
+.jumbotron {
+    height: 400px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url(../img/jumbotron.jpg);
+    margin-bottom: 55px;
+}
 
 main {
-    background-color: $dark;
+    .dark-bg {
+        background-color: $dark;
 
-    .jumbotron {
-        height: 400px;
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-image: url(../img/jumbotron.jpg);
-        margin-bottom: 55px;
-    }
-    .container {
-        position: relative;
-        display: flex;
-        flex-wrap: wrap;
-
-        .current-serie {
-            position: absolute;
+        .container {
+            position: relative;
             display: flex;
-            justify-content: center;
-            align-items: center;
-            top: -80px;
-            width: 250px;
-            height: 50px;
-            background-color: $dc-blue;
+            flex-wrap: wrap;
 
-            p {
-                text-transform: uppercase;
-                font-size: 1.4rem;
-                color: $text-white;
-                font-weight: bold;
-            }
-        }
-
-        & div:last-child {
-            display: flex;
-            justify-content: center;
-            width: 100%;
-
-            button {
-                cursor: pointer;
-                text-transform: uppercase;
-                margin-bottom: 20px;
-                font-weight: bold;
-                font-size: 0.7rem;
-                color: $text-white;
-                width: 180px;
-                height: 35px;
-                border: none;
+            .current-serie {
+                position: absolute;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                top: -80px;
+                width: 250px;
+                height: 50px;
                 background-color: $dc-blue;
+
+                p {
+                    text-transform: uppercase;
+                    font-size: 1.4rem;
+                    color: $text-white;
+                    font-weight: bold;
+                }
+            }
+
+            & div:last-child {
+                display: flex;
+                justify-content: center;
+                width: 100%;
+
+                button {
+                    cursor: pointer;
+                    text-transform: uppercase;
+                    margin-bottom: 20px;
+                    font-weight: bold;
+                    font-size: 0.7rem;
+                    color: $text-white;
+                    width: 180px;
+                    height: 35px;
+                    border: none;
+                    background-color: $dc-blue;
+                }
             }
         }
     }
@@ -140,4 +139,7 @@ main {
     }
 }
 
+@import "./partials/header.scss";
+@import "./partials/alternativeMain.scss";
+@import "./partials/comicsInfo.scss";
 @import "./partials/footer.scss";

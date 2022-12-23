@@ -1,0 +1,32 @@
+.container.info {
+    margin-bottom: 60px;
+
+    .x {
+        display: flex;
+
+        .comic-info-thumb {
+            border: 1px solid blue;
+        }
+
+        .comicsInfo {
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            padding: 0 100px;
+
+            .price {
+                cursor: pointer;
+                margin: 20px 0;
+                padding: 5px 15px;
+                border-radius: 10px;
+                font-size: 0.9rem;
+                color: #b0fd9c;
+                background-color: #55ba59;
+
+                &:hover {
+                    transform: scale(1.03);
+                }
+            }
+        }
+    }
+}

@@ -57,3 +57,19 @@ Route::get('/shop', function () {
 Route::get('/comicsInfo', function () {
     return view('comicsInfo');
 })->name('comicsInfo');
+
+
+
+
+// paramtro dinamico nella rotta:
+// aggiungere /{mia_var} e passarla con lo stesso nome alla funzione $mia_var
+Route::get('/comicsInfo/{id}', function ($id) {
+
+    $comics = config('comics.comics');
+    $comic_get = array_filter($comics, fn ($item) => $item['id'] == $id);
+    $comic = $comic_get[array_key_first($comic_get)];
+
+    //dd($comic);
+
+    return view('comicsInfo', compact('comic'));
+})->name('comicsInfo');
