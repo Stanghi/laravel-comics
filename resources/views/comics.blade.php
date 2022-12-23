@@ -8,7 +8,7 @@
             <p>Current series</p>
         </div>
 
-        @include('partials.card')
+        @include('partials.cards')
 
         <div>
             <button>Load more</button>
